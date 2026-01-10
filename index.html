@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>FitAffiliate – Fitness Products</title>
+<meta name="description" content="The best fitness & supplement recommendations">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>FitAffiliate</h1>
+
+    <nav>
+        <a href="index.html" data-lang="home"></a>
+        <a href="impressum.html" data-lang="impressum"></a>
+        <a href="datenschutz.html" data-lang="datenschutz"></a>
+    </nav>
+
+    <div class="language-box">
+        <label data-lang="language"></label>
+        <select id="langSelect">
+            <option value="de">Deutsch</option>
+            <option value="en">English</option>
+        </select>
+    </div>
+</header>
+
+<section class="hero">
+    <h2 data-lang="heroTitle"></h2>
+    <p data-lang="heroText"></p>
+</section>
+
+<section class="affiliate-hint">
+    <p data-lang="affiliate"></p>
+</section>
+
+<section class="products">
+    <h2 data-lang="products"></h2>
+
+    <div class="product-grid">
+
+        <div class="product">
+            <img src="images/whey.jpg" alt="Whey Protein">
+            <h3 data-lang="wheyTitle"></h3>
+            <p data-lang="wheyText"></p>
+            <a href="https://www.amazon.de/?tag=DEIN_AFFILIATE_CODE"
+               target="_blank"
+               rel="nofollow sponsored"
+               class="buy-btn"
+               data-lang="buy1"></a>
+        </div>
+
+        <div class="product">
+            <img src="images/creatin.jpg" alt="Creatine">
+            <h3 data-lang="creatineTitle"></h3>
+            <p data-lang="creatineText"></p>
+            <a href="https://www.myprotein.at/?affcode=DEINCODE"
+               target="_blank"
+               rel="nofollow sponsored"
+               class="buy-btn"
+               data-lang="buy2"></a>
+        </div>
+
+        <div class="product">
+            <img src="images/shaker.jpg" alt="Shaker">
+            <h3 data-lang="shakerTitle"></h3>
+            <p data-lang="shakerText"></p>
+            <a href="https://www.gymbeam.at/?ref=DEINCODE"
+               target="_blank"
+               rel="nofollow sponsored"
+               class="buy-btn"
+               data-lang="buy3"></a>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p data-lang="copyright"></p>
+    <p>
+        <a href="impressum.html" data-lang="impressum"></a> |
+        <a href="datenschutz.html" data-lang="datenschutz"></a>
+    </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
