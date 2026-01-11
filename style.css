@@ -47,7 +47,7 @@ nav a {
 }
 
 .product {
-    background: white;
+    background: grey;
     padding: 20px;
     border-radius: 8px;
 }
@@ -95,4 +95,5 @@ footer a {
 .language-box label {
     color: white;
     font-size: 14px;
+
 }
