@@ -62,7 +62,7 @@ nav a {
     display: block;
     margin-top: 15px;
     padding: 12px;
-    background: #e63946;
+    background: #000000;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -97,3 +97,4 @@ footer a {
     font-size: 14px;
 
 }
+
