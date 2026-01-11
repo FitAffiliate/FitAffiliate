@@ -14,7 +14,7 @@ const translations = {
         affiliate: "Hinweis: Diese Website enthält Affiliate-Links. Wenn du über einen dieser Links einkaufst, erhalten wir eine kleine Provision. Für dich entstehen keine zusätzlichen Kosten.",
 
         products: "Empfohlene Produkte",
-
+		searchPlaceholder: "Produkt suchen"
         wheyTitle: "Whey Protein",
         wheyText: "Ideal für Muskelaufbau & Regeneration",
         buy1: "Jetzt kaufen",
@@ -42,7 +42,7 @@ const translations = {
         affiliate: "Note: This website contains affiliate links. If you purchase through them, we earn a small commission at no extra cost to you.",
 
         products: "Recommended Products",
-
+		searchPlaceholder: "Search Products"
         wheyTitle: "Whey Protein",
         wheyText: "Perfect for muscle growth & recovery",
         buy1: "Buy now",
@@ -68,6 +68,10 @@ function setLanguage(lang) {
             el.textContent = translations[lang][key];
         }
     });
+
+	const searchInput = document.getElementById("search");
+if (searchInput) {
+    searchInput.placeholder = translations[lang].searchPlaceholder;
 }
 
 // Dropdown verbinden
@@ -101,3 +105,4 @@ function searchProducts() {
         }
     });
 }
+
