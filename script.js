@@ -70,10 +70,10 @@ function setLanguage(lang) {
     });
 
 	const searchInput = document.getElementById("search");
-if (searchInput) {
-    searchInput.placeholder = translations[lang].searchPlaceholder;
+	if (searchInput) {
+    	searchInput.placeholder = translations[lang].searchPlaceholder;
+	}
 }
-
 // Dropdown verbinden
 const langSelect = document.getElementById("langSelect");
 if (langSelect) {
@@ -105,4 +105,5 @@ function searchProducts() {
         }
     });
 }
+
 
