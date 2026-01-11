@@ -81,4 +81,23 @@ if (langSelect) {
 // Sprache beim Laden setzen
 const savedLang = localStorage.getItem("language") || "de";
 if (langSelect) langSelect.value = savedLang;
+
 setLanguage(savedLang);
+// ==================== SUCHLEISTE ====================
+// Funktion durchsucht Produkte nach Titel und Beschreibung
+function searchProducts() {
+    const input = document.getElementById("search").value.toLowerCase(); // Wert aus Suchleiste
+    const products = document.querySelectorAll(".product"); // Alle Produkt-Divs
+
+    products.forEach(product => {
+        // Titel (h3) und Beschreibung (p) durchsuchen
+        const title = product.querySelector("h3").textContent.toLowerCase();
+        const text = product.querySelector("p").textContent.toLowerCase();
+
+        if (title.includes(input) || text.includes(input)) {
+            product.style.display = "block"; // Produkt anzeigen
+        } else {
+            product.style.display = "none"; // Produkt ausblenden
+        }
+    });
+}
